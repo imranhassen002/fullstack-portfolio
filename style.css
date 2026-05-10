@@ -1,0 +1,480 @@
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial,sans-serif;
+margin:0;
+background:#0f172a;
+color:#f1f5f9;
+padding-top:80px;
+}
+
+/* NAVBAR */
+
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 30px;
+background:#020617;
+z-index:1000;
+}
+
+.logo{
+color:#38bdf8;
+font-size:18px;
+font-weight:600;
+text-decoration:none;
+}
+
+.nav-links{
+display:flex;
+gap:22px;
+list-style:none;
+align-items:center;
+margin-right:40px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+font-weight:500;
+font-size:15px;
+}
+
+.nav-links a:hover{
+color:#38bdf8;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
+background:#0f172a;
+color:white;
+position:relative;
+overflow:hidden;
+}
+
+.hero-text{
+max-width:600px;
+position:relative;
+z-index:1;
+}
+
+.hero-text h1{
+font-size:48px;
+margin-bottom:10px;
+}
+
+.hero-text h2{
+color:#38bdf8;
+margin-bottom:20px;
+}
+
+.hero-text p{
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.hero-image{
+position:relative;
+z-index:1;
+}
+
+.hero-image img{
+width:250px;
+border-radius:50%;
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+margin-right:10px;
+background:#38bdf8;
+color:black;
+text-decoration:none;
+border-radius:5px;
+}
+
+
+/* SOCIAL ICONS */
+
+.social-icons{
+margin-top:20px;
+display:flex;
+gap:20px;
+}
+
+.social-icons a{
+font-size:26px;
+color:#38bdf8;
+transition:transform 0.3s,color 0.3s;
+}
+
+.social-icons a:hover{
+color:white;
+transform:scale(1.2);
+}
+
+
+/* SECTIONS */
+
+section{
+padding:80px 60px;
+}
+
+#about{
+background:#020617;
+}
+
+#skills{
+background:#020617;
+}
+
+#projects{
+background:#020617;
+}
+
+#contact{
+background:#0f172a;
+}
+
+
+/* SKILLS */
+
+.skill{
+margin-bottom:30px;
+}
+
+.skill-bar{
+width:100%;
+background:#334155;
+height:10px;
+border-radius:5px;
+overflow:hidden;
+}
+
+.skill-progress{
+height:10px;
+width:0;
+background:#38bdf8;
+transition:width 2s ease;
+}
+
+.ml{width:90%;}
+.cv{width:85%;}
+.flutter{width:70%;}
+.web{width:75%;}
+
+
+/* PROJECTS */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.project-card{
+background:#1e293b;
+padding:25px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+color:white;
+transition:transform 0.3s ease,box-shadow 0.3s ease;
+cursor:pointer;
+}
+
+/* GLOW EFFECT */
+
+.project-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(56,189,248,0.7);
+}
+
+.project-card h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.project-img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.project-card img{
+transition:transform 0.3s ease;
+}
+
+.project-card:hover img{
+transform:scale(1.05);
+}
+
+
+/* TECH TAGS */
+
+.tech-tags{
+margin-top:15px;
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.tech-tags span{
+background:#38bdf8;
+color:#0f172a;
+padding:6px 12px;
+border-radius:6px;
+font-size:12px;
+font-weight:bold;
+}
+
+
+/* MODAL */
+
+.modal{
+display:none;
+position:fixed;
+z-index:1000;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.7);
+}
+
+.modal-content{
+background:#1e293b;
+margin:15% auto;
+padding:30px;
+width:60%;
+border-radius:10px;
+color:white;
+}
+
+.close-btn{
+float:right;
+font-size:28px;
+cursor:pointer;
+}
+
+
+/* TIMELINE */
+
+#timeline{
+padding:80px 60px;
+background:#020617;
+}
+
+.timeline{
+border-left:3px solid #38bdf8;
+margin-top:40px;
+padding-left:30px;
+}
+
+.timeline-item{
+margin-bottom:30px;
+}
+
+.timeline-item h3{
+color:#38bdf8;
+margin-bottom:5px;
+}
+
+.timeline-item p{
+color:#cbd5f5;
+}
+
+
+/* PARTICLES BACKGROUND */
+
+#particles-js{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+z-index:0;
+}
+/* SCROLL REVEAL ANIMATION */
+
+/* SCROLL REVEAL */
+
+.reveal{
+opacity:1;                 /* visible by default */
+transform:translateY(0);
+transition:all 0.8s ease;
+}
+
+.reveal.hidden{
+opacity:0;
+transform:translateY(60px);
+}
+
+.reveal.active{
+opacity:1;
+transform:translateY(0);
+}
+.cv-btn{
+background:#38bdf8;
+color:black;
+margin-top:10px;
+display:inline-block;
+transition:all 0.3s ease;
+}
+
+.cv-btn:hover{
+background:white;
+transform:translateY(-3px);
+box-shadow:0 0 15px rgba(56,189,248,0.8);
+}
+.project-links{
+margin-top:15px;
+}
+
+.project-links a{
+display:inline-block;
+padding:6px 14px;
+background:#38bdf8;
+color:#0f172a;
+border-radius:5px;
+text-decoration:none;
+font-size:13px;
+font-weight:bold;
+transition:all 0.3s;
+}
+
+.project-links a:hover{
+background:white;
+transform:translateY(-2px);
+}
+/* FOOTER */
+
+.footer{
+background:#020617;
+text-align:center;
+padding:40px 20px;
+border-top:1px solid #1e293b;
+}
+
+.footer h3{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.footer p{
+color:#cbd5f5;
+margin:5px 0;
+}
+
+.footer-icons{
+margin-top:15px;
+}
+
+.footer-icons a{
+color:#38bdf8;
+font-size:22px;
+margin:0 10px;
+transition:0.3s;
+}
+
+.footer-icons a:hover{
+color:white;
+transform:scale(1.2);
+}
+
+.copyright{
+margin-top:20px;
+font-size:13px;
+color:#64748b;
+}
+/* BACK TO TOP BUTTON */
+
+#backToTop{
+position:fixed;
+bottom:30px;
+right:30px;
+background:#38bdf8;
+color:#0f172a;
+border:none;
+border-radius:50%;
+width:45px;
+height:45px;
+font-size:18px;
+cursor:pointer;
+display:none;
+z-index:999;
+transition:0.3s;
+}
+
+#backToTop:hover{
+background:white;
+transform:translateY(-3px);
+box-shadow:0 0 10px rgba(56,189,248,0.7);
+}
+/* CONTACT FORM FIX */
+
+/* CONTACT SECTION */
+
+#contact{
+max-width:600px;
+margin:auto;
+text-align:left;
+}
+
+#contact form{
+display:flex;
+flex-direction:column;
+gap:15px;
+margin-top:20px;
+}
+
+#contact label{
+font-weight:bold;
+color:#cbd5f5;
+}
+
+#contact input,
+#contact textarea{
+width:100%;
+padding:12px;
+border-radius:6px;
+border:none;
+background:#1e293b;
+color:white;
+font-size:14px;
+}
+
+#contact textarea{
+min-height:120px;
+resize:vertical;
+}
+
+#contact button{
+width:160px;
+padding:12px;
+background:#38bdf8;
+border:none;
+border-radius:6px;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+#contact button:hover{
+background:white;
+transform:translateY(-2px);
+}
