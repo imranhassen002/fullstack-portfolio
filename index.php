@@ -76,10 +76,28 @@ computer vision, and modern web technologies.
 
 <div class="projects-grid">
 
-<div class="project-card" onclick="openProject('Wave-Gest','Radar hand gesture system')">
+<div class="project-card" onclick="openProject('Wave-Gest','Radar hand gesture recognition system using machine learning and computer vision.')">
 <img src="images/projects/wavegest.png" class="project-img" alt="WaveGest">
 <h3>Wave-Gest</h3>
 <p>Radar gesture recognition system</p>
+</div>
+
+<div class="project-card" onclick="openProject('Car Rental App','Full-stack car rental application built using web technologies.')">
+<img src="images/projects/carrental.png" class="project-img" alt="Car Rental">
+<h3>Car Rental App</h3>
+<p>Vehicle booking and rental system</p>
+</div>
+
+<div class="project-card" onclick="openProject('DistilBERT Text Classification','Machine learning project for text classification using DistilBERT.')">
+<img src="images/projects/distilbert.png" class="project-img" alt="DistilBERT">
+<h3>DistilBERT Classifier</h3>
+<p>AI-powered text classification system</p>
+</div>
+
+<div class="project-card" onclick="openProject('Retail Product Detection','Computer vision project for detecting retail products.')">
+<img src="images/projects/retail.png" class="project-img" alt="Retail">
+<h3>Retail Product Detection</h3>
+<p>Computer vision retail detection system</p>
 </div>
 
 </div>
